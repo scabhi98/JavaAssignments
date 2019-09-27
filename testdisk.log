@@ -1,0 +1,321 @@
+
+
+Fri Sep 27 02:51:57 2019
+Command line: TestDisk
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 5.0.0-29-generic (#31-Ubuntu SMP Thu Sep 12 13:05:32 UTC 2019) x86_64
+Compiler: GCC 8.2
+ext2fs lib: 1.44.6, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+/dev/sda: LBA, LBA48, DCO support
+/dev/sda: size       1953525168 sectors
+/dev/sda: user_max   1953525168 sectors
+/dev/sda: dco        1953525168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63, sector size=512 - TOSHIBA MQ04ABF100, S/N:98QNPC4DT, FW:JU001C
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 1000 GB / 931 GiB - TOSHIBA MQ04ABF100
+Partition table type: EFI GPT
+
+Analyse Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=1953525167 (expected 1953525167)
+hdr_lba_start=34
+hdr_lba_end=1953525134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+check_part_gpt failed for partition
+ 2 P MS Reserved               264192     788479     524288 [Microsoft reserved partition]
+Current partition structure:
+ 1 P EFI System                  2048     264191     262144 [EFI system partition]
+No FAT, NTFS, ext2, JFS, Reiser, cramfs or XFS marker
+ 2 P MS Reserved               264192     788479     524288 [Microsoft reserved partition]
+ 2 P MS Reserved               264192     788479     524288 [Microsoft reserved partition]
+ 3 P MS Data                   788480  164628479  163840000 [Basic data partition]
+ 4 P EFI System             164628480  164890623     262144 [EFI System Partition]
+ 5 P Unknown                164890624  209946623   45056000
+ 6 P Unknown                209946624  230426623   20480000
+ 7 P MS Data                295962624  500762623  204800000 [Basic data partition]
+ 8 P MS Data                500762624 1012762623  512000000 [Basic data partition]
+ 9 P MS Data               1012762624 1953521663  940759040 [Basic data partition]
+10 P Linux Swap             230426624  247007231   16580608
+11 P Unknown                247007232  295962623   48955392
+
+search_part()
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
+FAT32 at 0/32/33
+FAT1 : 6206-7198
+FAT2 : 7199-8191
+start_rootdir : 8192 root cluster : 2
+Data : 8192-262143
+sectors : 262144
+cluster_size : 2
+no_of_cluster : 126976 (2 - 126977)
+fat_length 993 calculated 993
+set_FAT_info: name from BS used
+
+FAT32 at 0/32/33
+     MS Data                     2048     264191     262144 [NO NAME]
+     FAT32, blocksize=1024, 134 MB / 128 MiB
+FAT12 at 26/53/12
+FAT1 : 1-9
+FAT2 : 10-18
+start_rootdir : 19
+Data : 33-2879
+sectors : 2880
+cluster_size : 1
+no_of_cluster : 2847 (2 - 2848)
+fat_length 9 calculated 9
+FAT differs, FAT sectors=0-9/9
+heads/cylinder 2 (FAT) != 255 (HD)
+sect/track 18 (FAT) != 63 (HD)
+
+FAT12 at 26/53/12
+     MS Data                   421040     423919       2880 [NO NAME]
+     FAT12, blocksize=512, 1474 KB / 1440 KiB
+NTFS at 45/242/54
+heads/cylinder 16 (NTFS) != 255 (HD)
+sect/track 2 (NTFS) != 63 (HD)
+filesystem size           6174
+sectors_per_cluster       1
+mft_lcn                   2058
+mftmirr_lcn               5162
+clusters_per_mft_record   2
+clusters_per_index_record 8
+     MS Data                   732051     738224       6174
+     NTFS found using backup sector, blocksize=512, 3161 KB / 3087 KiB
+NTFS at 45/242/54
+heads/cylinder 16 (NTFS) != 255 (HD)
+sect/track 2 (NTFS) != 63 (HD)
+filesystem size           6174
+sectors_per_cluster       1
+mft_lcn                   2058
+mftmirr_lcn               5162
+clusters_per_mft_record   2
+clusters_per_index_record 8
+     MS Data                   738224     744397       6174 [Boot]
+     NTFS, blocksize=512, 3161 KB / 3087 KiB
+NTFS at 49/20/36
+filesystem size           163840000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+NTFS part_offset=403701760, part_size=83886080000, sector_size=512
+NTFS partition cannot be added (part_offset<part_size).
+NTFS at 49/20/36
+filesystem size           163840000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                   788480  164628479  163840000
+     NTFS, blocksize=4096, 83 GB / 78 GiB
+FAT32 at 10247/165/31
+FAT1 : 32-2048
+FAT2 : 2049-4065
+start_rootdir : 4066 root cluster : 2
+Data : 4066-262143
+sectors : 262144
+cluster_size : 1
+no_of_cluster : 258078 (2 - 258079)
+fat_length 2017 calculated 2017
+
+FAT32 at 10247/165/31
+     EFI System             164628480  164890623     262144 [EFI]
+     FAT32, blocksize=512, 134 MB / 128 MiB
+
+recover_EXT2: s_block_group_nr=0/171, s_mnt_count=252/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 5632000
+recover_EXT2: part_size 45056000
+     MS Data                164890624  209946623   45056000
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 23 GB / 21 GiB
+
+recover_EXT2: s_block_group_nr=0/78, s_mnt_count=251/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8112
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 2560000
+recover_EXT2: part_size 20480000
+     MS Data                209946624  230426623   20480000
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 10485 MB / 10000 MiB
+     Linux Swap             230426624  247007215   16580592
+     SWAP2 version 1, pagesize=4096, 8489 MB / 8095 MiB
+
+recover_EXT2: s_block_group_nr=0/186, s_mnt_count=251/4294967295, s_blocks_per_group=32768, s_inodes_per_group=8192
+recover_EXT2: s_blocksize=4096
+recover_EXT2: s_blocks_count 6119424
+recover_EXT2: part_size 48955392
+     MS Data                247007232  295962623   48955392
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 25 GB / 23 GiB
+NTFS at 18422/209/28
+filesystem size           204800000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                 91162625  295962624  204800000
+     NTFS found using backup sector, blocksize=4096, 104 GB / 97 GiB
+NTFS at 18422/209/28
+filesystem size           204800000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                295962624  500762623  204800000
+     NTFS, blocksize=4096, 104 GB / 97 GiB
+NTFS at 31171/8/6
+filesystem size           512000000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+NTFS part_offset=256390463488, part_size=262144000000, sector_size=512
+NTFS partition cannot be added (part_offset<part_size).
+NTFS at 31171/8/6
+filesystem size           512000000
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                500762624 1012762623  512000000
+     NTFS, blocksize=4096, 262 GB / 244 GiB
+NTFS at 63041/142/14
+filesystem size           940759040
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data                 72003585 1012762624  940759040
+     NTFS found using backup sector, blocksize=4096, 481 GB / 448 GiB
+NTFS at 63041/142/14
+filesystem size           940759040
+sectors_per_cluster       8
+mft_lcn                   786432
+mftmirr_lcn               2
+clusters_per_mft_record   -10
+clusters_per_index_record 1
+     MS Data               1012762624 1953521663  940759040
+     NTFS, blocksize=4096, 481 GB / 448 GiB
+
+Results
+   P MS Data                     2048     264191     262144 [NO NAME]
+     FAT32, blocksize=1024, 134 MB / 128 MiB
+   P MS Data                   421040     423919       2880 [NO NAME]
+     FAT12, blocksize=512, 1474 KB / 1440 KiB
+     MS Data                   732051     738224       6174
+     NTFS found using backup sector, blocksize=512, 3161 KB / 3087 KiB
+     MS Data                   738224     744397       6174 [Boot]
+     NTFS, blocksize=512, 3161 KB / 3087 KiB
+     MS Data                   788480  164628479  163840000
+     NTFS, blocksize=4096, 83 GB / 78 GiB
+     MS Data                 72003585 1012762624  940759040
+     NTFS found using backup sector, blocksize=4096, 481 GB / 448 GiB
+     MS Data                 91162625  295962624  204800000
+     NTFS found using backup sector, blocksize=4096, 104 GB / 97 GiB
+     EFI System             164628480  164890623     262144 [EFI]
+     FAT32, blocksize=512, 134 MB / 128 MiB
+     MS Data                164890624  209946623   45056000
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 23 GB / 21 GiB
+     MS Data                209946624  230426623   20480000
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 10485 MB / 10000 MiB
+     Linux Swap             230426624  247007215   16580592
+     SWAP2 version 1, pagesize=4096, 8489 MB / 8095 MiB
+     MS Data                247007232  295962623   48955392
+     ext4 blocksize=4096 Large_file Sparse_SB Recover, 25 GB / 23 GiB
+     MS Data                295962624  500762623  204800000
+     NTFS, blocksize=4096, 104 GB / 97 GiB
+     MS Data                500762624 1012762623  512000000
+     NTFS, blocksize=4096, 262 GB / 244 GiB
+     MS Data               1012762624 1953521663  940759040
+     NTFS, blocksize=4096, 481 GB / 448 GiB
+
+Hint for advanced users. dmsetup may be used if you prefer to avoid to rewrite the partition table for the moment:
+echo "0 262144 linear /dev/sda 2048" | dmsetup create test0
+echo "0 2880 linear /dev/sda 421040" | dmsetup create test1
+echo "0 6174 linear /dev/sda 732051" | dmsetup create test2
+echo "0 6174 linear /dev/sda 738224" | dmsetup create test3
+echo "0 163840000 linear /dev/sda 788480" | dmsetup create test4
+echo "0 940759040 linear /dev/sda 72003585" | dmsetup create test5
+echo "0 204800000 linear /dev/sda 91162625" | dmsetup create test6
+echo "0 262144 linear /dev/sda 164628480" | dmsetup create test7
+echo "0 45056000 linear /dev/sda 164890624" | dmsetup create test8
+echo "0 20480000 linear /dev/sda 209946624" | dmsetup create test9
+echo "0 16580592 linear /dev/sda 230426624" | dmsetup create test10
+echo "0 48955392 linear /dev/sda 247007232" | dmsetup create test11
+echo "0 204800000 linear /dev/sda 295962624" | dmsetup create test12
+echo "0 512000000 linear /dev/sda 500762624" | dmsetup create test13
+echo "0 940759040 linear /dev/sda 1012762624" | dmsetup create test14
+
+interface_write()
+ 1 P MS Data                     2048     264191     262144 [NO NAME]
+ 2 P MS Data                   421040     423919       2880 [NO NAME]
+simulate write!
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=1953525167 (expected 1953525167)
+hdr_lba_start=34
+hdr_lba_end=1953525134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+check_part_gpt failed for partition
+ 2 P MS Reserved               264192     788479     524288 [Microsoft reserved partition]
+ 1 P EFI System                  2048     264191     262144 [EFI system partition]
+ 2 P MS Reserved               264192     788479     524288 [Microsoft reserved partition]
+ 3 P MS Data                   788480  164628479  163840000 [Basic data partition]
+     NTFS, blocksize=4096, 83 GB / 78 GiB
+ 4 P EFI System             164628480  164890623     262144 [EFI System Partition]
+ 5 P Unknown                164890624  209946623   45056000
+ 6 P Unknown                209946624  230426623   20480000
+10 P Linux Swap             230426624  247007231   16580608
+11 P Unknown                247007232  295962623   48955392
+ 7 P MS Data                295962624  500762623  204800000 [Basic data partition]
+     NTFS, blocksize=4096, 104 GB / 97 GiB
+ 8 P MS Data                500762624 1012762623  512000000 [Basic data partition]
+     NTFS, blocksize=4096, 262 GB / 244 GiB
+ 9 P MS Data               1012762624 1953521663  940759040 [Basic data partition]
+     NTFS, blocksize=4096, 481 GB / 448 GiB
+
+Interface Advanced
+hdr_size=92
+hdr_lba_self=1
+hdr_lba_alt=1953525167 (expected 1953525167)
+hdr_lba_start=34
+hdr_lba_end=1953525134
+hdr_lba_table=2
+hdr_entries=128
+hdr_entsz=128
+check_part_gpt failed for partition
+ 2 P MS Reserved               264192     788479     524288 [Microsoft reserved partition]
+ 1 P EFI System                  2048     264191     262144 [EFI system partition]
+ 2 P MS Reserved               264192     788479     524288 [Microsoft reserved partition]
+ 3 P MS Data                   788480  164628479  163840000 [Basic data partition]
+     NTFS, blocksize=4096, 83 GB / 78 GiB
+ 4 P EFI System             164628480  164890623     262144 [EFI System Partition]
+ 5 P Unknown                164890624  209946623   45056000
+ 6 P Unknown                209946624  230426623   20480000
+10 P Linux Swap             230426624  247007231   16580608
+11 P Unknown                247007232  295962623   48955392
+ 7 P MS Data                295962624  500762623  204800000 [Basic data partition]
+     NTFS, blocksize=4096, 104 GB / 97 GiB
+ 8 P MS Data                500762624 1012762623  512000000 [Basic data partition]
+     NTFS, blocksize=4096, 262 GB / 244 GiB
+ 9 P MS Data               1012762624 1953521663  940759040 [Basic data partition]
+     NTFS, blocksize=4096, 481 GB / 448 GiB
+
+TestDisk exited normally.

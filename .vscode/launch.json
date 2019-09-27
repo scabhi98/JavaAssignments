@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloPrint",
+            "request": "launch",
+            "mainClass": "Assignment_2.HelloPrint",
+            "projectName": "Java_a56ae069"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DriverProgram",
+            "request": "launch",
+            "mainClass": "Assignment_1.DriverProgram",
+            "projectName": "Java_a56ae069"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestProg1",
+            "request": "launch",
+            "mainClass": "TestProg1",
+            "projectName": "Java_a56ae069"
+        }
+    ]
+}
